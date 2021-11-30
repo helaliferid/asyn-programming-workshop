@@ -1,0 +1,13 @@
+GET http://localhost:8090/todos?id=1
+
+###
+
+POST http://localhost:8090/todo
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id":1,
+    "task":"To read all emails",
+    "isDone":false
+}
