@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #output{
+             margin:2%;
+             padding:10px;
+             background-color: black;
+             color: yellow;
+         }
+    
+</style>
+</head>
+<body>
+    <pre>
+        <code>
+            <div id="output"></div>
+        </code>
+    </pre>
+
+    <script>const output = document.querySelector('#output');
+const apiBaseUri = 'https://cat-fact.herokuapp.com';
+const factsEndPoints = '/facts';
+data = null;
+var xhr = new XMLHttpRequest();
+xhr.onload = function(event) {
+    data = xhr.response;
+    output.innerHTML = JSON.stringify(JSON.parse(data), undefined, 3);
+};
+xhr.open('GET', apiBaseUri + factsEndPoints);
+xhr.send();
+
+</script>
+</body>
+</html>
