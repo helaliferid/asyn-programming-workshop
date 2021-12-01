@@ -11,6 +11,14 @@ const server=http.createServer(function(req,res){
 
     res.setHeader('Content-Type','application/json');
 
+
+    // switch (method) , pathname 
+    // case 'GET' && pathname === 'todos'
+    //             return todos read from a file
+    // case 'POST' && pathname === 'todos'
+    //              save the body of the POST request in the file and return 
+    // success message
+         
     res.end(`{
         "path":"${JSON.stringify(path)}",
         "method":"${method}"
