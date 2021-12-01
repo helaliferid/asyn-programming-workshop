@@ -1,7 +1,7 @@
-function f(callback){
+function f(done){
     setTimeout(function(){ 
                     console.log('doStaff in f');
-                    callback();
+                    done();
                 },3000);
 
     return ({computedValueF:5});
