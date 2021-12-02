@@ -22,18 +22,6 @@
         </code>
     </pre>
 
-    <script>const output = document.querySelector('#output');
-const apiBaseUri = 'https://cat-fact.herokuapp.com';
-const factsEndPoints = '/facts';
-data = null;
-var xhr = new XMLHttpRequest();
-xhr.onload = function(event) {
-    data = xhr.response;
-    output.innerHTML = JSON.stringify(JSON.parse(data), undefined, 3);
-};
-xhr.open('GET', apiBaseUri + factsEndPoints);
-xhr.send();
-
-</script>
+  <script src="/index.379dd93c.js" defer=""></script>
 </body>
 </html>
