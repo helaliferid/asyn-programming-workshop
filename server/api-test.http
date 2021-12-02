@@ -1,4 +1,4 @@
-GET http://localhost:8090/todos?id=1
+GET http://localhost:8090/todo
 
 ###
 
